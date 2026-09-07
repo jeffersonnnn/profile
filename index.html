@@ -84,6 +84,15 @@ h2 em{font-size:1.06em;letter-spacing:0;background:linear-gradient(180deg,#FFF,#
 .card-body p{color:var(--dim);font-size:13.5px;line-height:1.6;margin-top:7px}
 .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:13px}
 .tags span{font:500 10.5px/1 "Instrument Sans",sans-serif;letter-spacing:.06em;color:var(--faint);border:1px solid var(--hairline);border-radius:99px;padding:5px 9px}
+/* impact / experience */
+.xp{margin-top:36px}
+.xp-row{display:grid;grid-template-columns:170px 1fr;gap:10px 22px;padding:22px 0;border-bottom:1px solid var(--hairline)}
+.xp-row:first-child{border-top:1px solid var(--hairline)}
+.xp-when{font:500 11.5px/1.7 "Instrument Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.xp-row h3{font:600 16px/1.35 "Instrument Sans",sans-serif}
+.xp-row h3 span{color:var(--glow);font-weight:500}
+.xp-row p{color:var(--dim);font-size:13.5px;line-height:1.65;margin-top:6px;max-width:62ch}
+@media(max-width:640px){.xp-row{grid-template-columns:1fr;gap:4px}}
 /* about */
 .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);margin-top:40px}
 @media(max-width:760px){.about-grid{grid-template-columns:1fr}}
@@ -121,6 +130,7 @@ footer{padding:34px 0 44px;text-align:center;color:var(--faint);font-size:12px;b
   <span class="mono">JI</span>
   <a href="#top">Home</a>
   <a href="#work">Work</a>
+  <a href="#impact">Impact</a>
   <a href="#about">About</a>
   <a href="https://github.com/jeffersonnnn" target="_blank" rel="noopener">GitHub ↗</a>
   <a class="cta" href="mailto:heyjeffersonighalo@gmail.com">Say hi ↗</a>
@@ -254,21 +264,66 @@ footer{padding:34px 0 44px;text-align:center;color:var(--faint);font-size:12px;b
           </div>
         </div>
 
-        <a class="card reveal" href="https://aerosol-frontend-three.vercel.app" target="_blank" rel="noopener">
+        <a class="card reveal" href="https://harvestfi.online" target="_blank" rel="noopener">
           <div class="cover"><div class="art" style="background:
-            radial-gradient(110% 90% at 30% 0%, rgba(130,160,235,.26), transparent 55%),
-            radial-gradient(90% 80% at 85% 95%, rgba(80,80,180,.3), transparent 60%),
-            linear-gradient(150deg,#0A0E19,#05060B)"></div>
-            <div class="glyph">Ep</div>
-            <iframe class="site-frame" data-src="https://aerosol-frontend-three.vercel.app" title="EasyPay live preview" loading="lazy" tabindex="-1" aria-hidden="true" scrolling="no"></iframe>
+            radial-gradient(110% 90% at 30% 0%, rgba(150,200,160,.22), transparent 55%),
+            radial-gradient(90% 80% at 85% 95%, rgba(70,110,140,.32), transparent 60%),
+            linear-gradient(150deg,#0A1210,#05080A)"></div>
+            <div class="glyph">Hf</div>
+            <iframe class="site-frame" data-src="https://harvestfi.online" title="HarvestFi live preview" loading="lazy" tabindex="-1" aria-hidden="true" scrolling="no"></iframe>
             <span class="live-dot">LIVE</span>
-            <span class="view-pill">View — <em>EasyPay</em></span>
+            <span class="view-pill">View — <em>HarvestFi</em></span>
           </div>
-          <div class="card-body"><span class="status">Live</span><h3>EasyPay / AeroSol</h3>
-            <p>Send crypto to any X handle — no wallet address needed. Built first on Solana, iterated to Ethereum and Robinhood Chain.</p>
-            <div class="tags"><span>Solana</span><span>EVM</span><span>Payments</span></div>
+          <div class="card-body"><span class="status">Live · mainnet</span><h3>HarvestFi</h3>
+            <p>On-chain perpetual futures for real-world commodities — 71 markets at up to 10× leverage on a shared ETH liquidity pool, with transferable market-license NFTs earning 70% of trading fees. 70 fuzz &amp; invariant tests.</p>
+            <div class="tags"><span>Solidity</span><span>Foundry</span><span>Robinhood Chain</span></div>
           </div>
         </a>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="reveal">
+        <p class="eyebrow ruled">Impact</p>
+        <h2>Where I've <em>worked</em></h2>
+        <p class="sec-sub">Eight years across payments, L2 infrastructure, developer platforms, and a venture studio of my own.</p>
+      </div>
+      <div class="xp reveal">
+        <div class="xp-row">
+          <div class="xp-when">Feb 2025 — Present</div>
+          <div><h3>Chief Technology Officer <span>· Independent AI Venture Studio</span></h3>
+          <p>Founded and scaled a venture studio that launched 16+ blockchain products across Solana and BNB Chain, reaching $1.1M portfolio value. Led distributed engineering teams of 4–11 building AI trading platforms, DeFi protocols, payment systems, and MCP server infrastructure for the Solana ecosystem.</p></div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-when">Jul 2022 — Jan 2026</div>
+          <div><h3>Director of Developer Relations <span>· Monax Labs</span></h3>
+          <p>Kickstarted the DevRel department from zero: wrote v1 of the API documentation, led hiring, built the client developer-network framework for big-ticket customers, and wired developer feedback directly into product and engineering decisions.</p></div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-when">Nov 2021 — Present</div>
+          <div><h3>Founder <span>· African Web3 Engineering Talent</span></h3>
+          <p>Built a 900+ member community moving experienced African engineers into Web3, with learning paths from Solidity to growth engineering. Funded by the Findora Foundation.</p></div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-when">Nov 2021 — Jun 2022</div>
+          <div><h3>Senior Developer Relations Engineer <span>· Wyre</span></h3>
+          <p>Wrote v3 of the docs and led a 20-person effort revamping APIs, documentation, and developer onboarding for the payments platform.</p></div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-when">Jun 2021 — Nov 2021</div>
+          <div><h3>Head Documentation Engineer <span>· Polygon</span></h3>
+          <p>Refined and redesigned Polygon's developer documentation for the company's new direction, setting the site-wide writing style for developers integrating with the network.</p></div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-when">Oct 2019 — Jun 2021</div>
+          <div><h3>Lead Software Engineer <span>· SystemSpecs</span></h3>
+          <p>Led frontend on Remita Inline (payments) and built internal ERP tools in React, Gatsby, and Angular, with Docker and Redis on the DevOps side.</p></div>
+        </div>
+        <div class="xp-row">
+          <div class="xp-when">2018 — 2019</div>
+          <div><h3>Software Engineer <span>· Andela &amp; LandLagos</span></h3>
+          <p>Engineering at Andela; consultant frontend developer at LandLagos.com building the eCommerce experience in Vue, then React.</p></div>
+        </div>
       </div>
     </section>
 
@@ -279,7 +334,7 @@ footer{padding:34px 0 44px;text-align:center;color:var(--faint);font-size:12px;b
       </div>
       <div class="about-grid">
         <div class="bio reveal">
-          <p><b>I take ambiguous problems all the way to shipped products.</b> Based in London; previously at Ripple, Polygon, and Google. Over the last four years I've shipped 30+ systems solo — trading engines, ZK protocols, agent infrastructure, and the production frontends that make them usable.</p>
+          <p><b>I take ambiguous problems all the way to shipped products.</b> Based in the UK; previously at Polygon, Wyre, Monax Labs, and Andela. Over the last four years I've shipped 30+ systems solo — trading engines, ZK protocols, agent infrastructure, and the production frontends that make them usable.</p>
           <p>Right now I'm building at the intersection of AI and on-chain products: agents that trade, remember verifiably, and spend within cryptographically enforced budgets — shipping fast, measuring, iterating.</p>
         </div>
         <div class="skills reveal">
